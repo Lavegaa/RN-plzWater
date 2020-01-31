@@ -2,6 +2,8 @@ import React from "react";
 import { Text, FlatList, View, StyleSheet } from "react-native";
 import Plant from "../Plant";
 import { usePlantState } from "../../contexts/PlantContext";
+import ModalAdd from "../Modal/ModalAdd";
+import ButtonAdd from "../Button/ButtonAdd";
 
 export default function PlantTemplate() {
   const plantState = usePlantState();
@@ -15,6 +17,8 @@ export default function PlantTemplate() {
           </Plant>
         )}
       />
+      <ButtonAdd />
+      <ModalAdd />
     </View>
   );
 }

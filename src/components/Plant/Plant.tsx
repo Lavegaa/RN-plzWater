@@ -1,10 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
 
-interface PlantProps {
-  children: React.ReactNode;
-}
-
-export default function Plant({ children }: PlantProps) {
+export default function Plant({ children }: { children: React.ReactNode }) {
   return <Text>{children}</Text>;
 }

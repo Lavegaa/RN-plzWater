@@ -1,10 +1,13 @@
 import React from "react";
 import PlantTemplate from "../../components/PlantTemplate";
 import { PlantContextProvider } from "../../contexts/PlantContext";
+import { ModalContextProVider } from "../../contexts/ModalContext";
 export default function MainPage() {
   return (
-    <PlantContextProvider>
-      <PlantTemplate />
-    </PlantContextProvider>
+    <ModalContextProVider>
+      <PlantContextProvider>
+        <PlantTemplate />
+      </PlantContextProvider>
+    </ModalContextProVider>
   );
 }
